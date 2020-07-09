@@ -1,18 +1,29 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module'
+import { AppComponent } from './app.component'
+import { NavbarComponent } from './shared/navbar/navbar.component'
+import { RecipesComponent } from './recipes/recipes.component'
+import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component'
+import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component'
+import { RecipeItemComponent } from './recipes/recipe-item/recipe-item.component'
+import { LocationListComponent } from './location-list/location-list.component'
+import { LocationEditComponent } from './location-list/location-edit/location-edit.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent,
+    LocationListComponent,
+    LocationEditComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
