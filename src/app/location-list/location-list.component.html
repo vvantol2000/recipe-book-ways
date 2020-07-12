@@ -1,1 +1,29 @@
-<p>location-list works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <app-location-edit></app-location-edit>
+    <hr />
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer;"
+        *ngFor="let location of locations"
+      >
+        <div
+          class="card card-background"
+          style="background-image: url('https://images.unsplash.com/photo-1453614512568-c4024d13c247?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');"
+        >
+          <div class="card-body">
+            <h6 class="card-category text-info">{{location.hours}}</h6>
+            <h3 class="card-title">{{location.name}}</h3>
+            <p class="card-description">
+              {{location.address}}
+            </p>
+            <a href="#pablo" class="btn btn-danger btn-round">
+              <i class="material-icons">subject</i> Select Location
+            </a>
+          </div>
+        </div>
+      </a>
+    </ul>
+  </div>
+</div>
